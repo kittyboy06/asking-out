@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#E32B7D",
+                "background-light": "#FDF6F9",
+                "background-dark": "#1A1618",
+              },
+              fontFamily: {
+                "display": ["Plus Jakarta Sans", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "1.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative flex min-h-screen w-full flex-col items-center justify-start overflow-x-hidden bg-background-light dark:bg-background-dark p-4">
+<!-- Top App Bar Replacement (Casual) -->
+<div class="flex w-full items-center justify-between py-4 mb-2">
+<div class="flex size-10 items-center justify-center rounded-full bg-white/80 dark:bg-white/10 shadow-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100" style="">arrow_back</span>
+</div>
+</div>
+<!-- Main Content Container -->
+<div class="w-full max-w-md flex flex-col gap-6">
+<!-- Playful Heading -->
+<div class="px-6 flex items-center justify-center mb-6">
+<div class="flex gap-1.5 flex-1 max-w-[80px] justify-center">
+<div class="h-1.5 w-full bg-primary rounded-full"></div>
+<div class="h-1.5 w-full bg-zinc-200 dark:bg-zinc-700 rounded-full"></div>
+</div>
+</div><div class="text-center space-y-2">
+<h2 class="text-primary font-extrabold text-sm uppercase tracking-widest" style="">Chill Invite</h2>
+<h1 class="text-slate-900 dark:text-slate-100 text-4xl font-extrabold tracking-tight leading-tight" style="">
+                    Are you free?? ☕️✨
+                </h1>
+</div>
+<!-- Hero Image Section -->
+<div class="relative @container group">
+<div class="aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-xl shadow-primary/10 border-4 border-white dark:border-white/5 transition-transform duration-300 group-hover:scale-[1.01]">
+<div class="h-full w-full bg-cover bg-center" data-alt="Cozy sunlit coffee shop with wooden tables and plants" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDTc-o5oDKQ5C7tKJNXflyNmaK8FkWY4Ago1LtLTyR8jDQOxh0pxt3sfWsMCEHuOKWvwzYbI7ihjkpWlumuanyoW4saflO37RyjDjWgSN2RUlfZS2-4jXK4YEwyilB8m0jU7nmTZhpSyUup0fClxASQr8Uj54qGC33sAWktAY3pFrIhkiLr_fHn0OhL7KIVXbBylUTfF5inPQTVlDMzo08ASIiwHHwj4DD-NejBTAMG7kzCM53b7wOvcV1SeW-IC5ABNP1Achcy33A&quot;);">
+</div>
+</div>
+<!-- Floating Badge -->
+</div>
+<!-- Event Details Card -->
+<div class="dark:bg-white/5 backdrop-blur-xl rounded-[2rem] p-6 mt-4 border border-white/20 dark:border-white/10 shadow-sm bg-white/80">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="bg-primary/10 text-primary p-3 rounded-2xl">
+<span class="material-symbols-outlined scale-110" style="">coffee</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold" style="">The Daily Grind</h3>
+<p class="text-slate-500 dark:text-slate-400 font-medium" style="">123 Espresso Lane</p>
+</div>
+</div>
+<div class="h-px bg-slate-200 dark:bg-slate-800 w-full"></div>
+<div class="flex items-center gap-4">
+<div class="bg-primary/10 text-primary p-3 rounded-2xl">
+<span class="material-symbols-outlined scale-110" style="">calendar_today</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 font-bold" style="">Today, Oct 24th</p>
+<p class="text-slate-500 dark:text-slate-400 font-medium" style="">2:00 PM - 3:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Social Section -->
+<!-- Action Buttons -->
+<div class="flex flex-row gap-3 pt-4 mb-8 w-full max-w-md">
+<button class="flex-1 py-4 px-6 rounded-2xl bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 font-bold text-lg active:scale-95 transition-transform" style="">
+                    Maybe later
+                </button>
+<button class="flex-[1.5] py-4 px-6 rounded-2xl bg-primary text-white font-bold text-lg shadow-lg shadow-pink-500/30 active:scale-95 transition-all" style="">
+                    Let's meet!
+                </button>
+</div>
+</div>
+<div class="absolute top-[-10%] right-[-10%] w-64 h-64 bg-pink-100/40 dark:bg-pink-900/10 rounded-full blur-3xl -z-10"></div>
+<div class="absolute bottom-[20%] left-[-10%] w-48 h-48 bg-blue-100/30 dark:bg-blue-900/10 rounded-full blur-3xl -z-10"></div></div>
+</body></html>
